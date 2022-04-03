@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  cdn bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar   open">
+            <button class="sidebarbtn btn">return</button>
+            <p>sidebar</p>
+            <ul class="item-list">
+                <li class="item">item</li>
+                <li class="item">item</li>
+                <li class="item">item</li>
+                <li class="item">item</li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <button class="sidebarbtn btn">open sidebar</button>
+            <span>navbar</span>
+        </div>
+        <div class="content">
+            <p>content</p>
+            <br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa illum ipsam sequi minima id ullam molestias dicta ab dolores natus, sunt, reiciendis similique iure aut fugit maxime adipisci. Vel, pariatur.
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, tenetur quo suscipit sunt sed porro alias voluptatem aut placeat illo eveniet, a dolorem libero explicabo esse minus. Veritatis, fugiat eveniet?
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //select the button inside navbar and sidebar
+        var button = document.querySelector('.sidebarbtn');
+        var button2= document.querySelector('.navbar button');
+        button.addEventListener('click', function(){
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('open');
+        });
+        button2.addEventListener('click', function(){
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('open');
+        });
+        button2.ani
+    </script>
+</body>
+</html>
